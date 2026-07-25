@@ -1,8 +1,21 @@
 aid: cowbell-cyber
 name: Cowbell Cyber
-description: 'Cowbell Cyber is a company surfaced as a portfolio company of anthemis and added to the
-  API Evangelist network as a stub for enrichment. Sector: insurtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Cowbell is a cyber insurance provider (insurtech) that delivers adaptive,
+  continuously-underwritten cyber liability coverage and cyber-risk management
+  services to small businesses and the middle market. Its platform pairs
+  insurance products with proprietary risk analytics — Cowbell Factors, a
+  continuous risk-rating model that benchmarks an organization's exposure
+  against peers — and closed-loop resilience services delivered through the
+  Cowbell console for policyholders, agents, and brokers. Product lines include
+  Cowbell Prime 100 / Prime 100 Pro (small business), Prime 250 / Prime One
+  (middle market), Prime Plus (excess), Technology Errors & Omissions,
+  Management Liability, plus the Cowbell Rx marketplace, Cowbell Connectors,
+  and Cowbell Insights. The company was surfaced as a portfolio company of
+  Anthemis and added to the API Evangelist network. As of this enrichment pass
+  Cowbell publishes no public developer API, OpenAPI, or developer portal — the
+  console at console.cowbellcyber.ai is an authenticated quoting/policy
+  application for agents and insureds, not a documented programmatic API.
 url: https://raw.githubusercontent.com/api-evangelist/cowbell-cyber/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +23,52 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cowbell.insure/wp-content/uploads/2025/09/Cowbell_Logo.png
 tags:
 - Company
 - Insurtech
+- Cyber Insurance
+- Insurance
+- Cyber Risk
+- Risk Management
+- Cybersecurity
 apis: []
+common:
+- type: DomainSecurity
+  url: security/cowbell-cyber-domain-security.yml
+- type: Website
+  url: https://cowbell.insure/
+- type: Blog
+  url: https://cowbell.insure/blog/
+- type: Login
+  url: https://console.cowbellcyber.ai/login
+- type: Support
+  url: https://cowbell.insure/contact-us/
+- type: TermsOfService
+  url: https://cowbell.insure/terms/
+- type: PrivacyPolicy
+  url: https://cowbell.insure/privacy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
